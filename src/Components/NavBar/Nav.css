@@ -1,0 +1,15 @@
+.NavContainer{
+    background-color: aquamarine;
+    display: flex;
+}
+
+.ul_nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.li_nav{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 8px;
+}
