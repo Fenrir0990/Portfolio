@@ -1,0 +1,67 @@
+.aboutTitle{
+    text-align: start;
+    /* animation: neon 2s infinite linear; */
+}
+
+.textRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start ;
+}
+.data{
+    display: flex;
+}
+.text{
+    transition: 1s;
+    color: white;
+    max-width: 800px;
+    text-align: left;
+    padding: 20px 0px 20px 0px;
+    padding-bottom: 20px;
+    line-height: 25px;
+    /* white-space: normal; */
+}
+
+.hobbies{
+ color: white;
+}
+/*====== Img css ======*/
+#wolfImg{
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.95);
+    transition: 0.5s;
+    width: 20%;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*====== MEDIA QUERIES(MEDIUM DEVICES)*/
+@media screen and(max-width:1024px){
+    
+}
+/*====== MEDIA QUERIES(SMALL DEVICES)*/
+@media screen and(max-width:600px){
+
+    #wolfImg{
+        align-self: center;
+    }
+    .text{
+        padding: 0px 30px 20px 30px;
+        text-align: center
+    }
+    .hobbies{
+        padding: 0px 30px 0px 30px;
+        text-align: center;
+    }
+    /* ===== Text Css ===== */
+
+   .textRow{
+    flex-direction: column;
+   }
+}

@@ -1,0 +1,173 @@
+.contacts{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.IconsContainer{
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.contactIcon{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.4s;
+  max-width: 80px;
+}
+/*Individual color*/
+.iconLinkedIn{
+  color: #0e76a8;
+}
+.iconEmail{
+  color: rgb(168, 0, 0);
+}
+.iconC{
+  font-size: 60px;
+  margin: 5px;
+}
+.contactIcon:hover{
+  color:#9b9b9b;
+  transform:scale(1.1)
+}
+.contactIcon:hover .iconLinkedIn {
+  color: #9b9b9b;
+}
+.contactIcon:hover .iconEmail{
+  color: #9b9b9b;
+}
+/*====== form style ======*/
+.contactForm{
+  position: fixed;
+  height: auto;
+  width:auto;
+  min-width:250px;
+  padding: 30px;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: #001b02 1px solid;
+  background-color: black;
+  box-shadow: 9px 9px 0px -3px #001b02;
+  transition: 1s;
+  z-index: 30;
+}
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: star;
+  justify-content: start;
+}
+.btnCs{
+  align-self: center;
+  margin-top: 20px;
+}
+#btnC{
+  padding: 5px 10px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  border: none;
+  transition: 1s;
+}
+.contactForm:has(#btnC:target)  {
+ left: -500px;
+}
+.formTitle{
+  align-self: center;
+}
+/* ====== Input Style ======*/
+
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: auto;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1rem;
+    cursor: text;
+    top: 25px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0; 
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:red; }
+}
+/*====== MEDIA QUERIES(MEDIUM DEVICES)*/
+
+@media screen and(max-width:1024px){
+
+}
+/*====== MEDIA QUERIES(SMALL DEVICES)*/
+@media screen and(max-width:600px){
+
+  .IconsContainer{
+    margin: 0px;
+  }
+  .contactForm{
+    margin: auto;
+    top: 10px;
+    bottom: 10px;
+    bottom: 10px;
+    left: 10px;
+    width: 90%;
+    height: 90%;
+  }
+}

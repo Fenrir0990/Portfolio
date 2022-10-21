@@ -1,0 +1,10 @@
+ ejemplo de card
+
+ {/* <article className ='cardContainer'>
+        <div className='icon'>
+        {icon}  
+        </div>
+        <h4>{name}</h4> 
+        <p className='cardDescription'>{description}</p> 
+        <p>{experience}</p>
+    </article> */}
