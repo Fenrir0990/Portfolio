@@ -45,6 +45,7 @@
   position: fixed;
   height: auto;
   width:auto;
+  max-width: 400px;
   min-width:250px;
   padding: 30px;
   bottom: 20px;
@@ -58,6 +59,16 @@
   box-shadow: 9px 9px 0px -3px #001b02;
   transition: 1s;
   z-index: 30;
+}
+.error{
+  color: red;
+  text-align: left;
+  margin-top: 10px;
+}
+.feedback{
+  text-align: center;
+  color: green;
+  margin-top: 20px;
 }
 .form{
   width: 100%;

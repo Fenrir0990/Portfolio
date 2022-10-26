@@ -16,15 +16,12 @@ export default function About() {
         <div className='containerA '>
           <span><h4 className='title3'>Summary</h4><hr/></span>
           <p className='text '>
-          Soy un chico de {data.age} años de uruguay.
-          En este momento me encuentro estudiando a nivel terciario ingenieria en computacion, pero como soy algo impaciente decidi ir metiendome en el mundo IT,
-          asi termine como Full Stack developer. 
-          Disfruto de encontrar nuevos desafíos que me permitan seguir aprendiendo y mejorando en todo momento.
+          I am a {data.age} year old boy from Uruguay. I have a strong fascination for canine animals as well as martial arts and cooking.
+          At this moment I am studying computer engineering at the tertiary level, but since I am somewhat impatient I decided to start getting into the IT world,
+          So I ended up as a Full Stack developer.
+          I enjoy finding new challenges that allow me to continue learning and improving at all times.
           </p> 
-          <ul className='hobbies'>
-            <li id='00li'>Hobbies</li>
-            {hobbies}
-          </ul>
+          
         </div>
       </div>
     </div>

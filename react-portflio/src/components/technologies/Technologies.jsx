@@ -84,32 +84,29 @@ function Technologies() {
     <section id='technologies'>
     <div className='textBox'>
         <h1 className='stroke neon title1'>Technologies</h1>
-        <p className='white res'>In this section you can view the lenguage,frameworks and tools whit I working.</p>
+        <p className='white res'>In this section you can view the lenguage,frameworks and tools whit I working.
+        At this moment I am learning many more but until I feel that I have a good handling I will not add them.</p>
         <div className='Grid2'>
         <div>
-          <h4 className='title2'>Lenguajes</h4>
+          <h4 className='title2'>Language</h4>
           <Swiper
             spaceBetween={0}
             slidesPerView={width}
             pagination={{ dynamicBullets : true }}
             modules={[Pagination]}
             className="mySwiper"
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
           >
             {techL}
           </Swiper> 
         </div>
         <div>
-          <h4 className='title2'>Generales</h4>
+          <h4 className='title2'>Generals</h4>
           <Swiper
             spaceBetween={0}
             slidesPerView={width}
             pagination={{ dynamicBullets : true }}
             modules={[Pagination]}
             className="mySwiper"
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
           >
             {techG}
           </Swiper> 
@@ -122,8 +119,6 @@ function Technologies() {
             pagination={{ dynamicBullets : true }}
             modules={[Pagination]}
             className="mySwiper"
-           /* onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}*/
           >
             {techF}
           </Swiper> 
@@ -135,9 +130,7 @@ function Technologies() {
             modules={[Pagination]}
             className="mySwiper"
             spaceBetween={0}
-            slidesPerView={width }
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            slidesPerView={width}
           >
           {techB}
           </Swiper>

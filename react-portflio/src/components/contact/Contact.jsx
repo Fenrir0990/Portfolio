@@ -6,6 +6,11 @@ import {GoMarkGithub} from "react-icons/go"
 import "./contact.scss"
 
 export default function Contact() {
+  const [errors, setErrors] = useState({
+    nameError:false,
+    gmailError:false,
+    textError:false
+  })
   const [mail, setMail] = useState({
     name:"",
     mail:"",
@@ -24,7 +29,9 @@ export default function Contact() {
   }
   const submit= (e)=>{
     e.preventDefault();
-    
+    if(mail.name.length< 2) setErrors({...errors, nameError:true })
+    else{setErrors({...errors, nameError : false })}
+    if(true){}
     emailjs.sendForm('service_zvm356w', 'template_on8m9u6', form.current, 'Z1rdDC2a_PHl3Bcqq')
       .then((result) => {
         console.log(result.text)
@@ -69,11 +76,13 @@ export default function Contact() {
         <div className='contactForm' style={{left:viewForm? "20px" : "-500px"}}>
           <form ref={form} className='form' onSubmit={(e)=>submit(e)}>
             <h3 className='formTitle'> Contact me </h3>
+            <p className = "feedback">Feedback is appreciated. If you have any advice to improve my portfolio I would be happy to know it</p>
             <button onClick={()=>close()} type='button' className='btn btn-primary ' id='btnC'>✗</button>
               <div className="form__group field">
                 <input type="input" value={mail.name} name="name" onChange = {(e)=>onChange(e)} className="form__field" placeholder="Name" id='name' required />
                 <label name="name" className="form__label">Name</label>
               </div>
+              {errors.nameError?<p className='error'>Need the name</p>:null}
               <div className="form__group field">
                 <input value={mail.mail} name="mail" onChange = {(e)=>onChange(e)} type="input" className="form__field" placeholder="Email" id='email' required />
                 <label  name="mail"  className="form__label">Email</label>
