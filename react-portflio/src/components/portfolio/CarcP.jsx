@@ -15,8 +15,8 @@ export default function CarcP(props) {
                     <div class="content">
                         <p>{description}</p>
                         <span className='buttons' >
-                            <a href = {urlR} className='btn btn-primary'>Repositorio</a>
-                            { deploid ? <a href = {urlD} className='btn btn-primary'>visitar</a> : null}
+                            <a href = {urlR} className='btn btn-primary'>Repositori</a>
+                            { deploid ? <a href = {urlD} className='btn btn-primary'>visit</a> : null}
                         </span>
                     </div>
                 </div>
