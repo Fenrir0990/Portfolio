@@ -38,7 +38,7 @@ export default function Portfolio() {
     )
   })
   return (
-    <section className="portfolio">
+    <section className="portfolio" id='portfolio'>
       <div className='container'>
         <h1 id="titlePort" className='title1 stroke'>Portfolio</h1>
         <div className='containerPP'>

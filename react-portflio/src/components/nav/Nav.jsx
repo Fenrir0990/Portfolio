@@ -5,7 +5,7 @@ import {AiOutlineHome,AiOutlineUser} from "react-icons/ai"
 import {BiBook,BiMessageSquareDetail} from "react-icons/bi"
 import {RiServiceLine} from "react-icons/ri"
 import {GiHamburgerMenu} from "react-icons/gi"
-
+import {IoIosFiling} from "react-icons/io"
 
 
 export default function Nav() {
@@ -33,6 +33,7 @@ export default function Nav() {
       <a className="icon iconN" href="#"><AiOutlineHome/></a>
       <a className="icon iconN" href="#about"><AiOutlineUser/></a>
       <a className="icon iconN" href="#technologies"><BiBook/></a>
+      <a className="icon iconN" href="#portfolio"><IoIosFiling/></a>
       <a className="icon iconN" href="#contact"><BiMessageSquareDetail/></a>
     </nav>
     <nav className="nav movilN">
