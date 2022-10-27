@@ -1,6 +1,9 @@
 import { FaNode } from 'react-icons/fa';
 import {IoLogoVue} from 'react-icons/io5'
 import {GrMysql} from 'react-icons/gr'
+import {AiFillGithub, AiFillHtml5} from 'react-icons/ai'
+import {DiScrum} from 'react-icons/di'
+
 import {
     SiCss3,
     SiJavascript,
@@ -64,7 +67,7 @@ export var data = {
         {   
             id:0,
             name:"HTML",
-            icon:<SiCss3 className='iconT'/>,
+            icon:<AiFillHtml5 className='iconT'/>,
             description:" HTML stands for HyperText Markup Language. This is the name given to the programming language used in the development of Web pages.",
             experience:"1 año",
             type:"frontend"
@@ -139,7 +142,22 @@ export var data = {
             description:"MySQL is an open source relational database management system (RDBMS) backed by Oracle and based on the Structured Query Language (SQL).",
             experience:"1 año",
             type:"backend"
+        },{
+            id:13,
+            name:"Git",
+            icon:<AiFillGithub className='iconT'/>,
+            description:"Git is the most widely used modern version control system in the world.",
+            experience:"1 año",
+            type:"general"
+        },{
+            id:14,
+            name:"Scrum",
+            icon:<DiScrum className='iconT'/>,
+            description:"The Scrum methodology is a process to carry out a set of tasks on a regular basis with the main objective of working collaboratively, that is, to encourage teamwork.",
+            experience:"1 año",
+            type:"general"
         }
-        
     ]
 } 
+
+
